@@ -60,6 +60,7 @@ export default function TextForm(props) {
             <div className="container">
                 <h3>Your text summary is </h3>
                 <p>total words is = {text.split(" ").length} and total characters is ={text.length}</p>
+                {/* calculating time required to read the article  */}
                 <p>{0.008*text.split(" ").length} minutes of read</p>
                   <h4>preview</h4>
                   <p>{text.length>0 ? text:"insert something to preview"}</p>
