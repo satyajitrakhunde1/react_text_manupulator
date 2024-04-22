@@ -24,7 +24,7 @@ export default function TextForm(props) {
         color:'white',
         backgroundColor:"black"
     })
-
+    
 
     const mystylie = () => {
         if (mode === "enable light mode") {
@@ -41,6 +41,7 @@ export default function TextForm(props) {
             setmode("enable light mode");
         }
     }
+    
 
  return (
         <> <div style={mystyle} className="container">
@@ -61,7 +62,7 @@ export default function TextForm(props) {
                 <p>total words is = {text.split(" ").length} and total characters is ={text.length}</p>
                 <p>{0.008*text.split(" ").length} minutes of read</p>
                   <h4>preview</h4>
-                  <p>{text}</p>
+                  <p>{text.length>0 ? text:"insert something to preview"}</p>
                 
             </div>
             </div>
